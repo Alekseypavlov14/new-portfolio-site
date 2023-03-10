@@ -1,7 +1,9 @@
+import { Route, Routes } from "react-router-dom"
+
 export const App = () => {
   return (
-    <div>
-      
-    </div>
+    <Routes>
+      <Route path='/' element={<div></div>} />
+    </Routes>
   )
 }
