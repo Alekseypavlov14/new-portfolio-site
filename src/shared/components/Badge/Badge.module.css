@@ -1,0 +1,8 @@
+.Badge {
+  padding: 5px 10px;
+  background: var(--light-grey-color);
+  border-radius: 10px;
+  width: fit-content;
+  cursor: pointer;
+  color: var(--primary-color);
+}
