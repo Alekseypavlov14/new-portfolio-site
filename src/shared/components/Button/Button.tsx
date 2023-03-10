@@ -9,11 +9,19 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   outlined?: boolean
 }
 
-export const Button: FC<ButtonProps> = ({ children, onClick, big, outlined, ...props }) => {
+export const Button: FC<ButtonProps> = ({ 
+  children, 
+  onClick, 
+  big, 
+  outlined, 
+  className, 
+  ...props 
+}) => {
   const classNames = cn(
     styles.Button,
     big && styles.Big,
-    outlined && styles.Outlined
+    outlined && styles.Outlined,
+    className
   )
 
   return (
