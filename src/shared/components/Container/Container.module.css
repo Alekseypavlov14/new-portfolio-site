@@ -1,0 +1,9 @@
+.Container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.PageContainer {
+  min-height: 100%;
+}
