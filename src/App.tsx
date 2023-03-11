@@ -1,9 +1,7 @@
-import { Route, Routes } from "react-router-dom"
+import { Routing } from "@app/routing"
 
 export const App = () => {
   return (
-    <Routes>
-      <Route path='/' element={<div></div>} />
-    </Routes>
+    <Routing />
   )
 }
