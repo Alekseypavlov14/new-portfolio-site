@@ -1,0 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:600);
+
+.Logo {
+  font-family: 'Oswald';
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 53px;
+  color: var(--dark-color);
+}
