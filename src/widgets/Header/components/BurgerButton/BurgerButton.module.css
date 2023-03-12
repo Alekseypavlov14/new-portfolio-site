@@ -1,0 +1,11 @@
+.BurgerButton span,
+.BurgerButton::before,
+.BurgerButton::after {
+  background-color: var(--primary-color) !important;
+}
+
+@media (min-width: 767.99px) {
+  .BurgerButton {
+    display: none !important;
+  }
+}

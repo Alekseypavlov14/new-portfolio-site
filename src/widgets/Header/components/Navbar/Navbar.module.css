@@ -1,0 +1,11 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+@media (max-width: 767.98px) {
+  .Navbar {
+    display: none;
+  }
+}
