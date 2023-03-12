@@ -6,3 +6,10 @@
   background-color: var(--secondary-color);
   opacity: 40%;
 }
+
+@media (max-width: 767.98px) {
+  .Decoration {
+    width: 100px;
+    height: 100px;
+  }
+}
