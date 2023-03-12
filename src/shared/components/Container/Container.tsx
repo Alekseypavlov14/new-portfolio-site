@@ -4,7 +4,7 @@ import cn from 'clsx'
 
 interface ContainerProps {
   children: ReactNode
-  className: string
+  className?: string
   page?: boolean
 }
 
