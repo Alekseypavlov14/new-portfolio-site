@@ -1,0 +1,10 @@
+.NavLink {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+.ActiveNavLink {
+  color: var(--secondary-color);
+}
