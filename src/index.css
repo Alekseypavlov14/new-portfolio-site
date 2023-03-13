@@ -6,6 +6,7 @@
   --dark-color: #08101A;
   --grey-color: #787272;
   --light-grey-color: #EEEEEE;
+  --transition: 0.3s;
 }
 
 * {
