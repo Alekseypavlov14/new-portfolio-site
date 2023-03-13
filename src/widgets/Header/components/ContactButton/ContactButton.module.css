@@ -1,3 +1,7 @@
+.ContactButton {
+  cursor: pointer;
+}
+
 @media (max-width: 767.98px) {
   .ContactButton {
     display: none !important;
