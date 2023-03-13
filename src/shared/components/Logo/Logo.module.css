@@ -6,4 +6,5 @@
   font-size: 36px;
   line-height: 53px;
   color: var(--dark-color);
+  cursor: pointer;
 }
