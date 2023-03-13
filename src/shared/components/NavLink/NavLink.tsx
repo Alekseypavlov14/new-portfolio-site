@@ -1,5 +1,6 @@
 import { FC, ReactNode } from 'react'
 import { NavLink as ReactNavLink} from 'react-router-dom'
+import { H6 } from '@shared/components/Text'
 import styles from './NavLink.module.css'
 import cn from 'clsx'
 
@@ -19,11 +20,8 @@ export const NavLink: FC<NavLinkProps> = ({ to, children }) => {
   }
 
   return (
-    <ReactNavLink
-      className={getClassNames}
-      to={to}
-    >
-      {children}
+    <ReactNavLink className={getClassNames} to={to}>
+      <H6>{children}</H6>
     </ReactNavLink>
   )
 }

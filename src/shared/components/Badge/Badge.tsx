@@ -1,4 +1,5 @@
 import { FC, ReactNode } from 'react'
+import { H6 } from '@shared/components/Text'
 import styles from './Badge.module.css'
 
 interface BadgeProps {
@@ -7,8 +8,8 @@ interface BadgeProps {
 
 export const Badge: FC<BadgeProps> = ({ children }) => {
   return (
-    <div className={styles.Badge}>
+    <H6 className={styles.Badge}>
       {children}
-    </div>
+    </H6>
   )
 }
