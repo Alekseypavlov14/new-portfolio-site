@@ -1,0 +1,9 @@
+.SectionRows > *:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767.98px) {  
+  .SectionRows > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

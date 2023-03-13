@@ -1,0 +1,10 @@
+.Sections {
+  display: flex;
+  gap: 100px;
+}
+
+@media (max-width: 767.98px) {  
+  .Sections {
+    gap: 0px;
+  }
+}

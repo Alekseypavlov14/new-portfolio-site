@@ -1,0 +1,8 @@
+.PhoneNumber {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.PhoneNumber:hover {
+  color: var(--secondary-color);
+}

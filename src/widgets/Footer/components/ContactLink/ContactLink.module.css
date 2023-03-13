@@ -1,0 +1,10 @@
+.ContactLink {
+  display: block;
+  text-decoration: none;
+  color: var(--dark-color);
+  transition: var(--transition);
+}
+
+.ContactLink:hover {
+  color: var(--secondary-color);
+}
