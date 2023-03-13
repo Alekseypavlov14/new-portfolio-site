@@ -7,6 +7,8 @@
   --grey-color: #787272;
   --light-grey-color: #EEEEEE;
   --transition: 0.3s;
+  --container-width: 1110px;
+  --container-horizontal-padding: 15px;
 }
 
 * {
