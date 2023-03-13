@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import { HomePage } from '@pages/HomePage'
 import { Layout } from '@app/layout'
 
 interface RoutingProps {}
@@ -8,7 +9,7 @@ export const Routing: FC<RoutingProps> = () => {
   return (
     <Routes>
       <Route path='/' element={<Layout />}>
-        <Route path='/' element={<></>} />
+        <Route path='/' element={<HomePage />} />
         <Route path='/projects' element={<></>} />
         <Route path='/contacts' element={<></>} />
       </Route>
