@@ -5,6 +5,10 @@
   min-height: 100%;
 }
 
+.Layout > * {
+  width: 100%;
+}
+
 .Main {
   flex: 1 1 auto;
 }
