@@ -10,13 +10,13 @@ interface HeaderProps {}
 
 export const Header: FC<HeaderProps> = () => {
   return (
-    <div className={styles.Header}>
+    <header className={styles.Header}>
       <Container className={styles.Container}>
         <Logo />
         <Navbar />
         <ContactButton />
         <BurgerButton />
       </Container>
-    </div>
+    </header>
   )
 }

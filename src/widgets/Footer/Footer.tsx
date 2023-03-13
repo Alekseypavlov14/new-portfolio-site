@@ -14,7 +14,7 @@ interface FooterProps {}
 
 export const Footer: FC<FooterProps> = () => {
   return (
-    <div className={styles.Footer}>
+    <footer className={styles.Footer}>
       <Container className={styles.Container}>
         <Logo />
 
@@ -44,6 +44,6 @@ export const Footer: FC<FooterProps> = () => {
           <PhoneNumber>+40 739 521 908</PhoneNumber>
         </SectionRows>
       </Container>
-    </div>
+    </footer>
   )
 }

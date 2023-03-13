@@ -6,10 +6,10 @@ interface NavbarProps {}
 
 export const Navbar: FC<NavbarProps> = () => {
   return (
-    <div className={styles.Navbar}>
+    <nav className={styles.Navbar}>
       <NavLink to='/'>Home</NavLink>
       <NavLink to='/projects'>Projects</NavLink>
       <NavLink to='/contacts'>Contacts</NavLink>
-    </div>
+    </nav>
   )
 }
