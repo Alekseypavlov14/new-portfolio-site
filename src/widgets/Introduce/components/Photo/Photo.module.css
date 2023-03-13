@@ -1,0 +1,9 @@
+.Photo {
+  height: fit-content;
+}
+
+@media (max-width: 1070px) {
+  .Photo {
+    display: none;
+  }
+}
