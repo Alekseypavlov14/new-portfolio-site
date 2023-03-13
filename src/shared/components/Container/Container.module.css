@@ -1,5 +1,5 @@
 .Container {
-  max-width: 1110px;
+  max-width: var(--container-width);
   margin: 0 auto;
 }
 
@@ -10,6 +10,6 @@
 @media (max-width: 1140px) {
   .Container {
     max-width: 100%;
-    padding: 0px 15px;
+    padding: 0px var(--container-horizontal-padding);
   }
 }
