@@ -9,12 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
     "clsx": "^1.2.1",
     "dotenv": "^16.0.3",
     "firebase": "^9.17.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-query": "^3.39.3",
+    "react-redux": "^8.0.5",
     "react-router-dom": "^6.9.0",
+    "redux": "^4.2.1",
     "standard-ui": "^0.5.2"
   },
   "devDependencies": {
