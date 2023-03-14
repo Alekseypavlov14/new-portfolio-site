@@ -1,0 +1,51 @@
+.ProjectCard {
+  max-width: 350px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border: 3px solid #5562FF;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.LinksBlock {
+  margin-bottom: 30px;
+}
+
+.LinksBlock > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.Link {
+  color: var(--primary-color);
+}
+.Link::after {
+  background-color: var(--primary-color);
+}
+
+.Repository {
+  color: var(--grey-color);
+}
+
+.Repository::after {
+  background-color: var(--grey-color);
+}
+
+.Footer {
+  display: flex;
+  align-items: flex-end;
+}
+
+@media (max-width: 767.98px) {
+  .ProjectCard {
+    max-width: 280px;
+    padding: 24px;
+  }
+
+  .LinksBlock {
+    margin-bottom: 24px;
+  }
+
+  .LinksBlock > *:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
