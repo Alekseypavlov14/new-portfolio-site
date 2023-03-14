@@ -9,8 +9,6 @@ export const BurgerButton: FC<BurgerButtonProps> = () => {
 
   const toggleSidebar = () => setSidebarOpened(value => !value)
 
-  // TODO: create global state for menu
-  
   return (
     <DefaultBurgerButton 
       className={styles.BurgerButton}

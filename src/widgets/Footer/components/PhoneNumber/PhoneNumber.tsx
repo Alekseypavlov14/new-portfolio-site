@@ -7,9 +7,7 @@ interface PhoneNumberProps {
 }
 
 export const PhoneNumber: FC<PhoneNumberProps> = ({ children }) => {
-  function callHandler() {
-    // TODO: realize call feature
-  }
+  function callHandler() {}
 
   return (
     <div 
