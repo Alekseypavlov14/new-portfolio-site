@@ -14,7 +14,9 @@ const Description: FC<DescriptionProps> = ({ text }) => {
   const isLong = useMemo(() => isTextLong(text), [text])
 
   if (!isLong) return  (
-    <span>{text}</span>
+    <div className={styles.Description}>
+      {text}
+    </div>
   )
 
   return (

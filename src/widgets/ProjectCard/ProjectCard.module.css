@@ -5,10 +5,10 @@
   border: 3px solid #5562FF;
   border-radius: 30px;
   padding: 30px;
-}
-
-.LinksBlock {
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .LinksBlock > *:not(:last-child) {
@@ -39,10 +39,6 @@
   .ProjectCard {
     max-width: 280px;
     padding: 24px;
-  }
-
-  .LinksBlock {
-    margin-bottom: 24px;
   }
 
   .LinksBlock > *:not(:last-child) {

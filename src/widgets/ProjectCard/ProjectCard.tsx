@@ -6,36 +6,31 @@ import { Title } from './components/Title'
 import { Link } from './components/Link'
 import { Date } from './components/Date'
 import styles from './ProjectCard.module.css'
-import { Anchor } from '@shared/components/Anchor'
-import { H3 } from '@shared/components/Text'
 
-interface ProjectCardProps extends ProjectEntity {}
+interface ProjectCardProps {
+  project: ProjectEntity
+}
 
-export const ProjectCard: FC<ProjectCardProps> = ({
-  name,
-  description,
-  link,
-  repository,
-  technologies,
-  date
-}) => {
+export const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className={styles.ProjectCard}>
-      <Title>{name}</Title>
-      <Description text={description} />
+      <div className={styles.Header}>
+        <Title>{project.name}</Title>
+        <Description text={project.description} />
+      </div>
 
       <div className={styles.LinksBlock}>
-        <Link to={link} className={styles.Link}>
+        <Link to={project.link} className={styles.Link}>
           Open the app
         </Link>
-        <Link to={repository} className={styles.Repository}>
+        <Link to={project.repository} className={styles.Repository}>
           Source code
         </Link>
       </div>
 
       <div className={styles.Footer}>
-        <Technologies technologies={technologies} />
-        <Date time={date} />
+        <Technologies technologies={project.technologies} />
+        <Date time={project.date} />
       </div>
     </div>
   )

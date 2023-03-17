@@ -5,14 +5,12 @@
   text-align: center;
   display: block;
   color: var(--grey-color);
-  margin-bottom: 30px;
 }
 
 @media (max-width: 767.98px) {
   .Description {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 19px;
-    margin-bottom: 24px;
   }
 }
