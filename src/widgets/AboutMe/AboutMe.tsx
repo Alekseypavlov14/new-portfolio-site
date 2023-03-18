@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Container } from '@shared/components/Container'
-import { Title } from './components/Title'
 import { H3, H6 } from '@shared/components/Text'
+import { Title } from './components/Title'
 import styles from './AboutMe.module.css'
 
 interface AboutMeProps {}
