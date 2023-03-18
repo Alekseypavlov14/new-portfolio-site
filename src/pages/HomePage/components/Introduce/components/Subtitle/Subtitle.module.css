@@ -1,0 +1,13 @@
+.Subtitle {
+  max-width: calc(var(--container-width) / 2);
+  color: var(--grey-color);
+  margin-bottom: 50px;
+}
+
+@media (max-width: 767.98px) {
+  .Subtitle {
+    max-width: 330px;
+    color: var(--grey-color);
+    margin-bottom: 40px;
+  }
+}

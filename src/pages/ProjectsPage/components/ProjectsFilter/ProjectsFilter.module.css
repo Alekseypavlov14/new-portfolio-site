@@ -1,0 +1,23 @@
+.ProjectsFilter {
+  padding: 80px 0px;
+}
+
+.Title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.Subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .ProjectsFilter {
+    padding: 50px 0px;
+  }
+
+  .Subtitle {
+    margin-bottom: 20px;
+  }
+}
