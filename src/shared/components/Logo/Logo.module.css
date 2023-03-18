@@ -7,4 +7,6 @@
   line-height: 53px;
   color: var(--dark-color);
   cursor: pointer;
+  width: 67px;
+  height: 53px;
 }
