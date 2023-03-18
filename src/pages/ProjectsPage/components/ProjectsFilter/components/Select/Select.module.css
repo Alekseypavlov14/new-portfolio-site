@@ -1,6 +1,8 @@
 .Select {
-  margin: 0 auto;
-  max-width: 350px;
+  margin: 0 auto !important;
+  max-width: 350px !important;
+  font-size: 20px !important;
+  margin-bottom: 70px !important;
 }
 
 .Select__control {
@@ -8,76 +10,4 @@
   border: none !important;
   padding: 0px !important;
   box-shadow: none !important;
-}
-
-.Select__indicator {
-  cursor: pointer;
-}
-
-.Select__indicator-separator {
-  display: none !important;
-}
-
-.Select__control {
-  border: 1px solid var(--light-grey-color) !important;
-}
-
-.Select__control--is-focused {
-  border: 1px solid var(--light-grey-color) !important;
-}
-
-.Select__multi-value {
-  background: var(--light-grey-color) !important;
-  color: var(--light-dark) !important;
-}
-
-.Select__multi-value__label {
-  color: var(--light-dark) !important;
-}
-
-.Select__multi-value__remove {
-  cursor: pointer !important;
-  border-radius: 2px !important ;
-}
-
-.Select__multi-value__remove:hover {
-  background: var(--light-darken) !important;
-  color: var(--light-dark) !important;
-}
-
-.Select__indicator {
-  border-radius: 2px !important;
-  color: var(--light-dark) !important;
-}
-
-.Select__indicator:hover {
-  background: var(--light-neutral) !important;
-}
-
-.Select__menu {
-  background: var(--light-primary) !important;
-  color: var(--light-dark) !important;
-}
-
-.Select__option:visited,
-.Select__option:hover {
-  background: var(--light-neutral) !important;
-}
-.Select__option:active {
-  background: var(--light-darken) !important;
-}
-
-.Select:hover {
-  background: var(--light-darken) !important;
-}
-
-.Select:active {
-  background: var(--light-medium) !important;
-}
-
-@media (max-width: 767.98px) {
-  .Select {
-    max-width: 330px;
-    font-size: 20px;
-  }
 }

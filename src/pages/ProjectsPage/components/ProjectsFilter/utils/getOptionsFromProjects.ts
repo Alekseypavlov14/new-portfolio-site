@@ -1,17 +1,14 @@
+import { getTechnologiesFromProjects } from './getTechnologiesFromProjects'
 import { parseKeysToOptions } from './../utils/parseKeysToOptions'
+import { sortKeysInAlphabet } from './sortKeysInAlphabet'
 import { ProjectEntity } from "@entities/projects"
 
 export function getOptionsFromProjects(projects: ProjectEntity[]) {
-  let technologies: string[] = []
+  const technologies = getTechnologiesFromProjects(projects)
 
-  projects.forEach(project => {
-    const projectTechnologies = project.technologies
-    technologies.push(...projectTechnologies)
-  })
+  const technologiesSortedInAlphabet = sortKeysInAlphabet(technologies)
 
-  technologies = Array.from(new Set(technologies))
-
-  const options = parseKeysToOptions(technologies)
+  const options = parseKeysToOptions(technologiesSortedInAlphabet)
 
   return options
 }

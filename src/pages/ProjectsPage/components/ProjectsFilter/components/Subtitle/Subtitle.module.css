@@ -1,0 +1,10 @@
+.Subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .Subtitle {
+    margin-bottom: 20px;
+  }
+}

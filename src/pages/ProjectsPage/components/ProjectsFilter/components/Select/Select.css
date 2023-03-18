@@ -1,0 +1,77 @@
+.Select {
+  margin: 0 auto !important;
+  max-width: 350px !important;
+  font-size: 20px !important;
+  margin-bottom: 70px !important;
+}
+
+.Select__control {
+  background: transparent !important;
+  border: none !important;
+  padding: 0px !important;
+  box-shadow: none !important;
+  border: 1px solid var(--grey-color) !important;
+}
+
+.Select__control--is-focused {
+  border: 1px solid var(--primary-color) !important;
+}
+
+.Select__indicator {
+  cursor: pointer !important;
+  border-radius: 2px !important;
+  color: var(--grey-color) !important;
+  transition: var(--transition) !important;
+}
+
+.Select__indicator:hover {
+  background: var(--light-grey-color) !important;
+}
+
+.Select__indicator-separator {
+  display: none !important;
+}
+
+.Select__multi-value {
+  background: var(--light-grey-color) !important;
+  color: var(--dark-color) !important;
+}
+
+.Select__multi-value__remove {
+  cursor: pointer !important;
+  border-radius: 2px !important;
+}
+
+.Select__multi-value__remove:hover {
+  background: var(--light-grey-color) !important;
+  color: var(--dark-color) !important;
+}
+
+.Select__menu {
+  background: #fff !important;
+  color: var(--dark-color) !important;
+  font-size: 18px !important;
+}
+
+.Select__menu::-webkit-scrollbar
+.Select__menu::-webkit-scrollbar-track,
+.Select__menu::-webkit-scrollbar-thumb {
+  display: none !important;
+}
+
+.Select__option:visited,
+.Select__option:hover,
+.Select__option:active  {
+  background: var(--light-grey-color) !important;
+}
+
+@media (max-width: 767.98px) {
+  .Select {
+    max-width: 330px !important;
+    margin-bottom: 50px !important;
+  }
+
+  .Select__menu {
+    font-size: 16px !important;
+  }
+}

@@ -1,7 +1,9 @@
 import { FC } from 'react'
+import { QueryResult } from './components/QueryResult'
 import { Container } from '@shared/components/Container'
-import { H1, H4 } from '@shared/components/Text'
+import { Subtitle } from './components/Subtitle'
 import { Select } from './components/Select'
+import { Title } from './components/Title'
 import styles from './ProjectsFilter.module.css'
 
 interface ProjectsFilterProps {}
@@ -10,9 +12,10 @@ export const ProjectsFilter: FC<ProjectsFilterProps> = () => {
   return (
     <div className={styles.ProjectsFilter}>
       <Container>
-        <H1 className={styles.Title}>My projects</H1>
-        <H4 className={styles.Subtitle}>Filter by used tools</H4>
+        <Title />
+        <Subtitle />
         <Select />
+        <QueryResult />
       </Container>
     </div>
   )
