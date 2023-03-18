@@ -11,9 +11,9 @@ export const Layout: FC<LayoutProps> = () => {
     <div className={styles.Layout}>
       <Header />
 
-      <div className={styles.Main}>
+      <main className={styles.Main}>
         <Outlet />
-      </div>
+      </main>
 
       <Footer />
     </div>
