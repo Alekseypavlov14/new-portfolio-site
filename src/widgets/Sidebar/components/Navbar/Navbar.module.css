@@ -1,0 +1,13 @@
+.Title {
+  font-size: 26px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.Link {
+  margin-bottom: 30px;
+}
+
+.Link > * {
+  font-size: 20px;
+}

@@ -7,6 +7,8 @@ import cn from 'clsx'
 interface NavLinkProps {
   to: string
   children: ReactNode
+  className?: string 
+  onClick?: () => void
 }
 
 interface ClassNameProps {
@@ -14,13 +16,21 @@ interface ClassNameProps {
   isPending: boolean
 }
 
-export const NavLink: FC<NavLinkProps> = ({ to, children }) => {
+export const NavLink: FC<NavLinkProps> = ({ to, children, className, onClick }) => {
   function getClassNames(props: ClassNameProps) {
-    return cn(styles.NavLink, props.isActive && styles.ActiveNavLink)
+    return cn(styles.NavLink, props.isActive && styles.ActiveNavLink, className)
+  }
+
+  function clickHandler() {
+    if (onClick) onClick()
   }
 
   return (
-    <ReactNavLink className={getClassNames} to={to}>
+    <ReactNavLink 
+      className={getClassNames}
+      onClick={clickHandler} 
+      to={to}
+    >
       <H6>{children}</H6>
     </ReactNavLink>
   )

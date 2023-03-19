@@ -1,0 +1,16 @@
+.Sidebar {
+  padding: 50px 0px;
+  max-width: 280px;
+  position: fixed;
+  top: 0;
+  left: -110%;
+  transition: var(--transition);
+  background-color: #fff;
+  border-right: 1px solid var(--primary-color);
+  z-index: 10;
+  height: 100%;
+}
+
+.Sidebar.Opened {
+  left: 0;
+}
