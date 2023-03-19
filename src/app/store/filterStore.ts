@@ -1,16 +1,16 @@
 import { create } from "zustand"
 
 interface FilterStore {
-  keys: string[],
-  setKeys: (keys: string[]) => void
+  technologies: string[],
+  setTechnologies: (technologies: string[]) => void
 }
 
 export const useFilterStore = create<FilterStore>((set) => ({
-  keys: [],
-  setKeys(keys) {
-    set({ keys })
+  technologies: [],
+  setTechnologies(technologies) {
+    set({ technologies })
   },
 }))
 
-export const keysSelector = (store: FilterStore) => store.keys
-export const setKeysSelector = (store: FilterStore) => store.setKeys
+export const technologiesSelector = (store: FilterStore) => store.technologies
+export const setTechnologiesSelector = (store: FilterStore) => store.setTechnologies

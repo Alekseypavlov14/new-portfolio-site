@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Badge } from '@shared/components/Badge'
+import { Technology } from '../Technology'
 import styles from './Technologies.module.css'
 
 interface TechnologiesProps {
@@ -10,7 +10,7 @@ export const Technologies: FC<TechnologiesProps> = ({ technologies }) => {
   return (
     <div className={styles.Technologies}>
       {technologies.map((technology, index) => (
-        <Badge key={index}>{technology}</Badge>
+        <Technology technology={technology} key={index} />
       ))}
     </div>
   )
