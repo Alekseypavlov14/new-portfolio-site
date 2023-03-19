@@ -1,12 +1,12 @@
 import { FC } from 'react'
-import { useFilteredProjects } from '../../hooks/useFilteredProjects'
+import { resultSelector, useSearchStore } from '../../store'
 import { ProjectCard } from '@widgets/ProjectCard'
 import styles from './QueryResult.module.css'
 
 interface QueryResultProps {}
 
 export const QueryResult: FC<QueryResultProps> = () => {
-  const projects = useFilteredProjects()
+  const projects = useSearchStore(resultSelector)
 
   return (
     <div className={styles.QueryResult}>

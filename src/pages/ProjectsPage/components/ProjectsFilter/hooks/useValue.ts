@@ -1,6 +1,6 @@
 import { useMemo } from "react"
-import { useFilterStore, keysSelector, setKeysSelector } from "@app/store"
-import { parseKeysToOptions } from "../utils/parseKeysToOptions"
+import { useFilterStore, technologiesSelector, setTechnologiesSelector } from "@app/store"
+import { parseTechnologiesToOptions } from "../utils/parseTechnologiesToOptions"
 import { MultiValue } from "react-select"
 import { Option } from './../types/Option'
 
@@ -10,12 +10,13 @@ type UseValue = {
 }
 
 export function useValue(): UseValue {
-  const keys = useFilterStore(keysSelector)
-  const setKeys = useFilterStore(setKeysSelector)
+  const technologies = useFilterStore(technologiesSelector)
+  const setTechnologies = useFilterStore(setTechnologiesSelector)
 
-  const value = useMemo(() => parseKeysToOptions(keys), [keys])
+  const value = useMemo(() => parseTechnologiesToOptions(technologies), [technologies])
+
   function updateValue(options: MultiValue<Option>) {
-    setKeys(options.map(option => option.value))
+    setTechnologies(options.map(option => option.value))
   }
 
   return { value, updateValue }

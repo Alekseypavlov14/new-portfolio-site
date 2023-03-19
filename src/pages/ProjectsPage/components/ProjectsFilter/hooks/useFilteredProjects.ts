@@ -1,16 +1,19 @@
-import { keysSelector, useFilterStore } from "@app/store"
-import { ProjectEntity, useProjects } from "@entities/projects"
+import { useSearchStore, updateResultSelector } from './../store'
+import { technologiesSelector, useFilterStore } from "@app/store"
+import { filterProjectsByTechnologies } from '../utils/filterProjectsByTechnologies'
+import { useProjects } from "@entities/projects"
+import { useEffect } from 'react'
 
-export function useFilteredProjects(): ProjectEntity[] {
-  const { data: projects, isError } = useProjects()
-  const keys = useFilterStore(keysSelector)
+export function useFilteredProjects() {
+  const { data: projects } = useProjects()
 
-  if (!projects) return []
-  if (isError) return []
+  const updateResult = useSearchStore(updateResultSelector)
+  const technologies = useFilterStore(technologiesSelector)
 
-  const filteredProjects = projects.filter(project => {
-    return keys.every(key => project.technologies.includes(key))
-  })
+  useEffect(() => {
+    if (!projects) return updateResult([])
 
-  return filteredProjects
+    const filteredProjects = filterProjectsByTechnologies(projects, technologies)
+    updateResult(filteredProjects)
+  }, [projects, technologies])
 }

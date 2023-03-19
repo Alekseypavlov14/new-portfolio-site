@@ -6,7 +6,7 @@
 }
 
 .Select__control {
-  background: transparent !important;
+  background: #fff !important;
   border: none !important;
   padding: 0px !important;
   box-shadow: none !important;
@@ -53,12 +53,6 @@
   font-size: 18px !important;
 }
 
-.Select__menu::-webkit-scrollbar
-.Select__menu::-webkit-scrollbar-track,
-.Select__menu::-webkit-scrollbar-thumb {
-  display: none !important;
-}
-
 .Select__option:visited,
 .Select__option:hover,
 .Select__option:active  {
@@ -66,11 +60,6 @@
 }
 
 @media (max-width: 767.98px) {
-  .Select {
-    max-width: 330px !important;
-    margin-bottom: 50px !important;
-  }
-
   .Select__menu {
     font-size: 16px !important;
   }
