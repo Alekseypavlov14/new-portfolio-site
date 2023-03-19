@@ -1,6 +1,9 @@
 .PhoneNumber {
+  display: block;
   cursor: pointer;
   transition: var(--transition);
+  text-decoration: none;
+  color: var(--dark-color);
 }
 
 .PhoneNumber:hover {

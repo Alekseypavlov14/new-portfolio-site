@@ -1,8 +1,8 @@
 import { FC } from 'react'
+import { ContactLinks } from './components/ContactLinks'
+import { PhoneNumbers } from './components/PhoneNumbers'
 import { SectionTitle } from './components/SectionTitle'
 import { SectionRows } from './components/SectionRows'
-import { PhoneNumber } from './components/PhoneNumber'
-import { ContactLink } from './components/ContactLink'
 import { Container } from '@shared/components/Container'
 import { Sections } from './components/Sections'
 import { NavLink } from '@shared/components/NavLink'
@@ -28,21 +28,14 @@ export const Footer: FC<FooterProps> = () => {
               <NavLink to='/contacts'>Contacts</NavLink>
             </SectionRows>
           </Section>
+
           <Section>
             <SectionTitle>Contacts</SectionTitle>
-
-            <SectionRows>
-              <ContactLink href='https://t.me/aleshapavlov14'>Telegram</ContactLink>
-              <ContactLink href='mailto:aleshapavlov9@gmail.com'>Gmail</ContactLink>
-              <ContactLink href='https://instagram.com/alio.sha13'>Instagram</ContactLink>
-            </SectionRows>
+            <ContactLinks />
           </Section>
         </Sections>
 
-        <SectionRows>
-          <PhoneNumber>+38 099 976 83 26</PhoneNumber>
-          <PhoneNumber>+40 739 521 908</PhoneNumber>
-        </SectionRows>
+        <PhoneNumbers />
       </Container>
     </footer>
   )

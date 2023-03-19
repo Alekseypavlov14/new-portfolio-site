@@ -1,20 +1,21 @@
-import { FC, ReactNode } from 'react'
+import { FC } from 'react'
+import { usePhoneNumberHref } from './../../hooks/usePhoneNumberHref'
 import { H6 } from '@shared/components/Text'
 import styles from './PhoneNumber.module.css'
 
 interface PhoneNumberProps {
-  children: ReactNode
+  tel: string
 }
 
-export const PhoneNumber: FC<PhoneNumberProps> = ({ children }) => {
-  function callHandler() {}
+export const PhoneNumber: FC<PhoneNumberProps> = ({ tel }) => {
+  const href = usePhoneNumberHref(tel)
 
   return (
-    <div 
+    <a 
       className={styles.PhoneNumber}
-      onClick={callHandler}
+      href={href}
     >
-      <H6>{children}</H6>
-    </div>
+      <H6>{tel}</H6>
+    </a>
   )
 }
