@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { technologiesSelector, useFilterStore } from '@app/store'
+import { technologiesSelector, useFilterStore } from '@app/store/filterStore'
 import { resultSelector, useSearchStore } from '../../store'
 import styles from './ResultAmount.module.css'
 

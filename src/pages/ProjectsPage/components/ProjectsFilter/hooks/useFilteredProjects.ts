@@ -1,7 +1,7 @@
 import { useSearchStore, updateResultSelector } from './../store'
-import { technologiesSelector, useFilterStore } from "@app/store"
+import { technologiesSelector, useFilterStore } from '@app/store/filterStore'
 import { filterProjectsByTechnologies } from '../utils/filterProjectsByTechnologies'
-import { useProjects } from "@entities/projects"
+import { useProjects } from '@entities/projects'
 import { useEffect } from 'react'
 
 export function useFilteredProjects() {

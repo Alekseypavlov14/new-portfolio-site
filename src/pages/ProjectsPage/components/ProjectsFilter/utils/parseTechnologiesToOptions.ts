@@ -1,4 +1,4 @@
-import { Option } from "../types/Option"
+import { Option } from '../types/Option'
 
 export function parseTechnologiesToOptions(keys: string[]): Option[] {
   return keys.map(key => ({

@@ -1,7 +1,7 @@
 import { getTechnologiesFromProjects } from './getTechnologiesFromProjects'
 import { parseTechnologiesToOptions } from './parseTechnologiesToOptions'
 import { sortKeysInAlphabet } from './sortKeysInAlphabet'
-import { ProjectEntity } from "@entities/projects"
+import { ProjectEntity } from '@entities/projects'
 
 export function getOptionsFromProjects(projects: ProjectEntity[]) {
   const technologies = getTechnologiesFromProjects(projects)

@@ -1,9 +1,9 @@
-import { FC, useMemo } from "react"
-import { MAX_DESCRIPTION_LENGTH } from "./../../const"
-import { isTextLong } from "./../../utils/isTextLong"
-import { useToggle } from "@shared/hooks/useToggle"
-import { MoreLink } from "../MoreLink"
-import styles from "./Description.module.css"
+import { FC, useMemo } from 'react'
+import { MAX_DESCRIPTION_LENGTH } from './../../const'
+import { isTextLong } from './../../utils/isTextLong'
+import { useToggle } from '@shared/hooks/useToggle'
+import { MoreLink } from '../MoreLink'
+import styles from './Description.module.css'
 
 interface DescriptionProps {
   text: string

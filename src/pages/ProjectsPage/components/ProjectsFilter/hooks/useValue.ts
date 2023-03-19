@@ -1,7 +1,7 @@
-import { useMemo } from "react"
-import { useFilterStore, technologiesSelector, setTechnologiesSelector } from "@app/store"
-import { parseTechnologiesToOptions } from "../utils/parseTechnologiesToOptions"
-import { MultiValue } from "react-select"
+import { useMemo } from 'react'
+import { useFilterStore, technologiesSelector, setTechnologiesSelector } from '@app/store/filterStore'
+import { parseTechnologiesToOptions } from '../utils/parseTechnologiesToOptions'
+import { MultiValue } from 'react-select'
 import { Option } from './../types/Option'
 
 type UseValue = {

@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { setTechnologiesSelector, useFilterStore } from '@app/store'
+import { setTechnologiesSelector, useFilterStore } from '@app/store/filterStore'
 import { useNavigation } from '@app/navigation'
 import { Badge } from '@shared/components/Badge'
 

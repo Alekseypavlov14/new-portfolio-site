@@ -1,4 +1,4 @@
-import { ProjectEntity } from "@entities/projects"
+import { ProjectEntity } from '@entities/projects'
 
 export function filterProjectsByTechnologies(projects: ProjectEntity[], technologies: string[]) {
   return projects.filter(project => {
