@@ -8,6 +8,5 @@ export function useNavigation() {
   return {
     navigateHomePage: () => navigate('/'),
     navigateProjectsPage: () => navigate('/projects'),
-    navigateContactsPage: () => navigate('/contacts')
   }
 }

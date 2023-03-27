@@ -25,7 +25,6 @@ export const Footer: FC<FooterProps> = () => {
             <SectionRows>
               <NavLink to='/'>Home</NavLink>
               <NavLink to='/projects'>Projects</NavLink>
-              <NavLink to='/contacts'>Contacts</NavLink>
             </SectionRows>
           </Section>
 

@@ -9,7 +9,6 @@ export const Navbar: FC<NavbarProps> = () => {
     <nav className={styles.Navbar}>
       <NavLink to='/'>Home</NavLink>
       <NavLink to='/projects'>Projects</NavLink>
-      <NavLink to='/contacts'>Contacts</NavLink>
     </nav>
   )
 }

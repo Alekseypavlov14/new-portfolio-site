@@ -12,7 +12,6 @@ export const Routing: FC<RoutingProps> = () => {
       <Route path='/' element={<Layout />}>
         <Route path='/' element={<HomePage />} />
         <Route path='/projects' element={<ProjectsPage />} />
-        <Route path='/contacts' element={<></>} />
       </Route>
     </Routes>
   )

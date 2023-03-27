@@ -29,14 +29,6 @@ export const Navbar: FC<NavbarProps> = () => {
         >
           Projects
         </NavLink>
-        
-        <NavLink 
-          className={styles.Link} 
-          onClick={closeSidebar} 
-          to='/contacts'
-        >
-          Contacts
-        </NavLink>
       </div>
     </div>
   )
