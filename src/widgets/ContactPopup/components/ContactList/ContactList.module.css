@@ -1,0 +1,16 @@
+.ContactList {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10%;
+}
+
+.ContactLabel:not(:last-child) {
+  display: block;
+  margin-bottom: 30px;
+  transition: var(--transition);
+}
+
+.ContactLabel:hover {
+  color: var(--secondary-color);
+}

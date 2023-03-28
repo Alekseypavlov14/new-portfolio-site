@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { ContactButton } from './components/ContactButton'
 import { BurgerButton } from './components/BurgerButton'
+import { ContactPopup } from '@widgets/ContactPopup'
 import { Container } from '@shared/components/Container'
 import { Navbar } from './components/Navbar'
 import { Logo } from '@shared/components/Logo'
@@ -16,6 +17,7 @@ export const Header: FC<HeaderProps> = () => {
         <Navbar />
         <ContactButton />
         <BurgerButton />
+        <ContactPopup />
       </Container>
     </header>
   )
