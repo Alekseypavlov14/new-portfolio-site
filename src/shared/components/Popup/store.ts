@@ -1,10 +1,5 @@
 import { create } from "zustand"
-
-interface PopupStore {
-  isOpened: boolean
-  openPopup: () => void
-  closePopup: () => void
-}
+import { PopupStore } from "./types/PopupStore"
 
 export function createPopupStore() {
   return create<PopupStore>((set) => ({
