@@ -1,9 +1,12 @@
+.ProjectListWrapper {
+  position: relative;
+}
+
 .ProjectList { 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 30px;
-  position: relative;
 }
 
 .Decoration1 {

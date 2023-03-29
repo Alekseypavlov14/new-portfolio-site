@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import { Appear, Directions } from '@shared/components/Animations'
 import { ProjectCard } from '@widgets/ProjectCard'
 import { useProjects } from '@entities/projects'
 import { sortByDate } from '../../utils/sortByDate'
@@ -15,13 +16,15 @@ export const ProjectList: FC<ProjectListProps> = () => {
   )
   
   return (
-    <div className={styles.ProjectList}>
-      {sortByDate(data).slice(0, 3).map((project) => (
-        <ProjectCard 
-          project={project} 
-          key={project.id} 
-        />
-      ))}
+    <div className={styles.ProjectListWrapper}>
+      <Appear from={Directions.Bottom} className={styles.ProjectList}>
+        {sortByDate(data).slice(0, 3).map((project) => (
+          <ProjectCard 
+            project={project} 
+            key={project.id} 
+          />
+        ))}
+      </Appear>
 
       <Decoration className={styles.Decoration1} />
       <Decoration className={styles.Decoration2} />
