@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import { Appear, Directions } from '@shared/components/Animations'
 import { ResultAmount } from '../ResultAmount'
 import { useOptions } from './../../hooks/useOptions'
 import { useValue } from './../../hooks/useValue'
@@ -14,15 +15,17 @@ export const Select: FC<SelectProps> = () => {
 
   return (
     <div className={styles.SelectBlock}>
-      <ReactSelect 
-        className={styles.Select} 
-        classNamePrefix={'Select'}
-        onChange={updateValue}
-        isSearchable={false} 
-        options={options}
-        value={value}
-        isMulti
-      />
+      <Appear from={Directions.Bottom}>
+        <ReactSelect 
+          className={styles.Select} 
+          classNamePrefix={'Select'}
+          onChange={updateValue}
+          isSearchable={false} 
+          options={options}
+          value={value}
+          isMulti
+        />
+      </Appear>
 
       <ResultAmount />
     </div>
