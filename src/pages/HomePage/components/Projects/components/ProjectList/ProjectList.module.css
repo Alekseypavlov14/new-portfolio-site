@@ -3,4 +3,26 @@
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 30px;
+  position: relative;
+}
+
+.Decoration1 {
+  position: absolute;
+  top: 50px;
+  left: -70px;
+  z-index: -1;
+}
+
+.Decoration2 {
+  position: absolute;
+  bottom: -40px;
+  left: 30%;
+  z-index: -1;
+} 
+
+.Decoration3 {
+  position: absolute;
+  top: 200px;
+  right: -90px;
+  z-index: -1;
 }

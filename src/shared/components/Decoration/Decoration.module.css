@@ -3,11 +3,9 @@
   width: 175px;
   height: 175px;
   border-radius: 50%;
-  background-color: var(--secondary-color);
-  opacity: 40%;
-
-  background-color: #fff;
-  box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.2),
+  opacity: 50%;
+  background-color: #eee;
+  box-shadow: 5px 5px 30px 5px rgba(255, 255, 255, 0.2),
   inset 0px 10px 58px 5px var(--secondary-color),
   inset 0px -10px 58px 5px var(--secondary-color),
   inset 0px 0px 10px 3px var(--secondary-color);
@@ -48,5 +46,31 @@
   .Decoration {
     width: 100px;
     height: 100px;
+    opacity: 40%;
+  }
+
+  .Container::before {
+    width: 12px;
+    height: 34px;
+    transform: rotateZ(40deg);
+    background-color: #fff;
+    border-radius: 30%;
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    filter: blur(4px);
+  }
+  
+  .Container::after {
+    top: 36px;
+    left: 32px;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    filter: blur(3px);
+    position: absolute;
+    background-color: #fff;
   }
 }
