@@ -1,0 +1,1 @@
+export type DirectionKey = 'Top' | 'Right' | 'Bottom' | 'Left'

@@ -1,0 +1,61 @@
+.Appear {
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  opacity: 0;
+}
+
+.Top {
+  animation-name: appear-from-top;
+}
+@keyframes appear-from-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.Right {
+  animation-name: appear-from-right;
+}
+@keyframes appear-from-right {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.Bottom {
+  animation-name: appear-from-bottom;
+}
+@keyframes appear-from-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.Left {
+  animation-name: appear-from-left;
+}
+@keyframes appear-from-left {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
