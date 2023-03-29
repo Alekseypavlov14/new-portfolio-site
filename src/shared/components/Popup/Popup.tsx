@@ -1,8 +1,8 @@
 import { FC, ReactNode, useRef } from 'react'
 import { useClickOutside } from './hooks/useClickOutside'
+import { getClassNames } from '@shared/lib/getClassNames' 
 import { useBodyLock } from './hooks/useBodyLock'
 import styles from './Popup.module.css'
-import cn from 'clsx'
 
 interface PopupProps {
   children: ReactNode
@@ -12,8 +12,8 @@ interface PopupProps {
 }
 
 export const Popup: FC<PopupProps> = ({ children, isOpened, onClose, className }) => {
-  const popupClassNames = cn(styles.Popup, isOpened && styles.PopupOpened, className)
-  const backgroundClassNames = cn(styles.Background, isOpened && styles.BackgroundOpened)
+  const popupClassNames = getClassNames(styles.Popup, isOpened && styles.PopupOpened, className)
+  const backgroundClassNames = getClassNames(styles.Background, isOpened && styles.BackgroundOpened)
 
   const popupRef = useRef<HTMLDivElement>(null)
   

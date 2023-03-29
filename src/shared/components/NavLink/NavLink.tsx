@@ -1,8 +1,8 @@
 import { FC, ReactNode } from 'react'
-import { NavLink as ReactNavLink} from 'react-router-dom'
+import { NavLink as ReactNavLink } from 'react-router-dom'
+import { getClassNames } from '@shared/lib/getClassNames'
 import { H6 } from '@shared/components/Text'
 import styles from './NavLink.module.css'
-import cn from 'clsx'
 
 interface NavLinkProps {
   to: string
@@ -17,8 +17,8 @@ interface ClassNameProps {
 }
 
 export const NavLink: FC<NavLinkProps> = ({ to, children, className, onClick }) => {
-  function getClassNames(props: ClassNameProps) {
-    return cn(styles.NavLink, props.isActive && styles.ActiveNavLink, className)
+  function calculateClassNames(props: ClassNameProps) {
+    return getClassNames(styles.NavLink, props.isActive && styles.ActiveNavLink, className)
   }
 
   function clickHandler() {
@@ -27,7 +27,7 @@ export const NavLink: FC<NavLinkProps> = ({ to, children, className, onClick }) 
 
   return (
     <ReactNavLink 
-      className={getClassNames}
+      className={calculateClassNames}
       onClick={clickHandler} 
       to={to}
     >

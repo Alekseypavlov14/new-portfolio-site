@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react'
+import { getClassNames } from '@shared/lib/getClassNames' 
 import styles from './Anchor.module.css'
-import cn from 'clsx'
 
 interface AnchorProps {
   href: string
@@ -9,7 +9,7 @@ interface AnchorProps {
 }
 
 export const Anchor: FC<AnchorProps> = ({ href, children, className }) => {
-  const classNames = cn(styles.Anchor, className)
+  const classNames = getClassNames(styles.Anchor, className)
   const content = children || href
 
   return (

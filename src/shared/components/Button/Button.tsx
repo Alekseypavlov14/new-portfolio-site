@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes, FC, ReactNode } from 'react'
+import { getClassNames } from '@shared/lib/getClassNames' 
 import styles from './Button.module.css'
-import cn from 'clsx'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode
@@ -17,7 +17,7 @@ export const Button: FC<ButtonProps> = ({
   className, 
   ...props 
 }) => {
-  const classNames = cn(
+  const classNames = getClassNames(
     styles.Button,
     big && styles.Big,
     outlined && styles.Outlined,

@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react'
+import { getClassNames } from '@shared/lib/getClassNames' 
 import styles from './H2.module.css'
-import cn from 'clsx'
 
 interface H2Props {
   children: ReactNode
@@ -8,7 +8,7 @@ interface H2Props {
 }
 
 export const H2: FC<H2Props> = ({ children, className }) => {
-  const classNames = cn(styles.H2, className)
+  const classNames = getClassNames(styles.H2, className)
 
   return (
     <h2 className={classNames}>

@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react'
+import { getClassNames } from '@shared/lib/getClassNames'
 import styles from './Container.module.css'
-import cn from 'clsx'
 
 interface ContainerProps {
   children: ReactNode
@@ -9,7 +9,7 @@ interface ContainerProps {
 }
 
 export const Container: FC<ContainerProps> = ({ children, className, page }) => {
-  const classNames = cn(
+  const classNames = getClassNames(
     styles.Container,
     page && styles.PageContainer,
     className

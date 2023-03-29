@@ -1,13 +1,13 @@
 import { FC } from 'react'
+import { getClassNames } from '@shared/lib/getClassNames'
 import styles from './Decoration.module.css'
-import cn from 'clsx'
 
 interface DecorationProps {
   className: string
 }
 
 export const Decoration: FC<DecorationProps> = ({ className }) => {
-  const classNames = cn(styles.Decoration, className)
+  const classNames = getClassNames(styles.Decoration, className)
 
   return (
     <div className={classNames}>

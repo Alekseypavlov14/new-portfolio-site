@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react'
+import { getClassNames } from '@shared/lib/getClassNames'
 import styles from './H3.module.css'
-import cn from 'clsx'
 
 interface H3Props {
   children: ReactNode
@@ -8,7 +8,7 @@ interface H3Props {
 }
 
 export const H3: FC<H3Props> = ({ children, className }) => {
-  const classNames = cn(styles.H3, className)
+  const classNames = getClassNames(styles.H3, className)
 
   return (
     <h3 className={classNames}>

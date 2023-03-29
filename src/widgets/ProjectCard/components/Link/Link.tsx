@@ -1,8 +1,8 @@
 import { FC, ReactNode } from 'react'
+import { getClassNames } from '@shared/lib/getClassNames' 
 import { Anchor } from '@shared/components/Anchor'
 import { H3 } from '@shared/components/Text'
 import styles from './Link.module.css'
-import cn from 'clsx'
 
 interface LinkProps {
   to: string
@@ -11,7 +11,7 @@ interface LinkProps {
 }
 
 export const Link: FC<LinkProps> = ({ to, children, className }) => {
-  const classNames = cn(styles.Link, className)
+  const classNames = getClassNames(styles.Link, className)
 
   return (
     <Anchor className={classNames} href={to}>
