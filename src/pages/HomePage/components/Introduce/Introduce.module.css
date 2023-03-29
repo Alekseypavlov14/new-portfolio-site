@@ -9,6 +9,7 @@
 .Buttons {
   display: flex;
   gap: 60px;
+  animation-delay: 1s;
 }
 
 @media (max-width: 1070px) {

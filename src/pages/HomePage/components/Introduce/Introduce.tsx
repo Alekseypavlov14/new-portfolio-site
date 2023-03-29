@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import { Appear, Directions } from '@shared/components/Animations'
 import { ProjectsButton } from './components/ProjectsButton'
 import { HireButton } from './components/HireButton'
 import { Container } from '@shared/components/Container'
@@ -17,10 +18,13 @@ export const Introduce: FC<IntroduceProps> = () => {
           <Title />
           <Subtitle />
   
-          <div className={styles.Buttons}>
+          <Appear 
+            className={styles.Buttons}
+            from={Directions.Bottom} 
+          >
             <HireButton />
             <ProjectsButton />
-          </div>
+          </Appear>
         </div>
         
         <Photo />

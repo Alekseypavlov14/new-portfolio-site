@@ -4,6 +4,10 @@
   margin-bottom: 50px;
 }
 
+.SubtitleAnimationBlock {
+  animation-delay: 0.5s;
+}
+
 @media (max-width: 767.98px) {
   .Subtitle {
     max-width: 330px;

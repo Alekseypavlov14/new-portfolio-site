@@ -1,5 +1,6 @@
 .Photo {
   height: fit-content;
+  animation-delay: 0.5s;
 }
 
 @media (max-width: 1070px) {
