@@ -1,6 +1,38 @@
+.QueryResultWrapper {
+  position: relative;
+}
+
 .QueryResult {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 30px;
+}
+
+.Decoration1 {
+  position: absolute;
+  top: 50px;
+  left: -30px;
+  z-index: -1;
+}
+
+.Decoration2 {
+  position: absolute;
+  top: 300px;
+  right: -40px;
+  z-index: -1;
+}
+
+.Decoration3 {
+  position: absolute;
+  top: 700px;
+  left: -50px;
+  z-index: -1;
+}
+
+.Decoration4 {
+  position: absolute;
+  top: 1000px;
+  right: -70px;
+  z-index: -1;
 }
