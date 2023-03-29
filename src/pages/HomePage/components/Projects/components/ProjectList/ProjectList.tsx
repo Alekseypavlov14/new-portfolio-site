@@ -2,8 +2,8 @@ import { FC } from 'react'
 import { ProjectCard } from '@widgets/ProjectCard'
 import { useProjects } from '@entities/projects'
 import { sortByDate } from '../../utils/sortByDate'
-import styles from './ProjectList.module.css'
 import { Decoration } from '@shared/components/Decoration'
+import styles from './ProjectList.module.css'
 
 interface ProjectListProps {}
 
