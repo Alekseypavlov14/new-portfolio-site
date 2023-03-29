@@ -10,6 +10,8 @@ export const Decoration: FC<DecorationProps> = ({ className }) => {
   const classNames = cn(styles.Decoration, className)
 
   return (
-    <div className={classNames} />
+    <div className={classNames}>
+      <div className={styles.Container} />
+    </div>
   )
 }

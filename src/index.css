@@ -30,3 +30,13 @@ body {
   height: 100%;
   width: 100%;
 }
+
+::selection {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+::-moz-selection {
+  color: #fff;
+  background: var(--primary-color);
+}
