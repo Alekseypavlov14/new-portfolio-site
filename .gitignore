@@ -25,3 +25,5 @@ dist-ssr
 
 .env
 TODO.txt
+# Local Netlify folder
+.netlify
