@@ -1,7 +1,7 @@
 import { DirectionKey } from "./types/DirectionKey"
 import { DirectionValue } from "./types/DirectionValue"
 
-export const START_ANIMATION_COEFFICIENT = 4
+export const START_ANIMATION_COEFFICIENT = 5
 export const FIRST_RENDER_DELAY = 300
 
 const TopDirection: DirectionValue = 'TOP'

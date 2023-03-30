@@ -1,6 +1,5 @@
 .ProjectListWrapper {
   position: relative;
-  overflow: hidden;
 }
 
 .ProjectList { 
@@ -12,14 +11,14 @@
 
 .Decoration1 {
   position: absolute;
-  top: 50px;
+  top: max(5%, 150px);
   left: -70px;
   z-index: -1;
 }
 
 .Decoration2 {
   position: absolute;
-  bottom: -40px;
+  top: max(90%, 200px);
   left: 30%;
   z-index: -1;
 } 
