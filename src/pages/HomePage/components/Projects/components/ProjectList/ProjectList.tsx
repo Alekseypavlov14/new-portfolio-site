@@ -9,16 +9,12 @@ import styles from './ProjectList.module.css'
 interface ProjectListProps {}
 
 export const ProjectList: FC<ProjectListProps> = () => {
-  const { data } = useProjects()
-
-  if (!data) return (
-    <div className={styles.ProjectList}></div>
-  )
+  const { projects } = useProjects()
   
   return (
     <div className={styles.ProjectListWrapper}>
       <Appear from={Directions.Bottom} className={styles.ProjectList}>
-        {sortByDate(data).slice(0, 3).map((project) => (
+        {sortByDate(projects).slice(0, 3).map((project) => (
           <ProjectCard 
             project={project} 
             key={project.id} 

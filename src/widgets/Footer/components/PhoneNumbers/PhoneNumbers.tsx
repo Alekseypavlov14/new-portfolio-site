@@ -6,9 +6,9 @@ import { SectionRows } from '../SectionRows'
 interface PhoneNumbersProps {}
 
 export const PhoneNumbers: FC<PhoneNumbersProps> = () => {
-  const { data: phoneNumbers, isLoading, isError } = usePhoneNumbers()
+  const { phoneNumbers, isLoading, isError } = usePhoneNumbers()
 
-  if (!phoneNumbers || isLoading) return (
+  if (isLoading) return (
     <SectionRows>
       Loading ...
     </SectionRows>

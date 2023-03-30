@@ -6,9 +6,9 @@ import { SectionRows } from '../SectionRows'
 interface ContactLinksProps {}
 
 export const ContactLinks: FC<ContactLinksProps> = () => {
-  const { data: contacts, isLoading, isError } = useContacts()
+  const { contacts, isLoading, isError } = useContacts()
 
-  if (!contacts || isLoading) return (
+  if (isLoading) return (
     <SectionRows>
       Loading ...
     </SectionRows>

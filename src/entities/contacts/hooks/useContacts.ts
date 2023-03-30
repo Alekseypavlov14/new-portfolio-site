@@ -3,5 +3,6 @@ import { QUERY_KEY } from './../const'
 import { useQuery } from "react-query"
 
 export function useContacts() {
-  return useQuery(QUERY_KEY, async () => await fetchContacts())
+  const { data: contacts = [], ...queryResult } = useQuery(QUERY_KEY, async () => await fetchContacts())
+  return { contacts, ...queryResult }
 }

@@ -7,7 +7,7 @@ import styles from './ContactList.module.css'
 interface ContactListProps {}
 
 export const ContactList: FC<ContactListProps> = () => {
-  const { data: contacts = [], isError, isLoading } = useContacts()
+  const { contacts, isError, isLoading } = useContacts()
 
   if (isError) return (
     <div className={styles.ContactList}>

@@ -4,13 +4,9 @@ import { useProjects } from '@entities/projects'
 import { Option } from '../types/Option'
 
 export function useOptions(): Option[] {
-  const { data } = useProjects()
+  const { projects } = useProjects()
 
-  const options = useMemo(() => {
-    if (!data) return []
-
-    return getOptionsFromProjects(data)
-  }, [data])
+  const options = useMemo(() => getOptionsFromProjects(projects), [projects])
 
   return options
 }
