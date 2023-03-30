@@ -1,0 +1,9 @@
+.GoBackLink {
+  text-decoration: none;
+  transition: var(--transition);
+  color: var(--primary-color);
+}
+
+.GoBackLink:hover {
+  color: var(--secondary-color);
+}
