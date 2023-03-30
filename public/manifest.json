@@ -1,0 +1,15 @@
+{
+  "short_name": "Oleksii Pavlov | Frontend",
+  "name": "Portfolio of Oleksii Pavlov",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "sizes": "96x96",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
