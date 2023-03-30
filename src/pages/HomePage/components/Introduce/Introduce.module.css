@@ -19,9 +19,6 @@
 }
 
 @media (max-width: 767.98px) {
-  .Container {
-    min-height: auto;
-  }
   .TextContent {
     margin: 50px auto;
   }
