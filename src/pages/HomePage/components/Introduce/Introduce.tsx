@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Appear, Directions } from '@shared/components/Animations'
 import { ProjectsButton } from './components/ProjectsButton'
-import { HireButton } from './components/HireButton'
+import { HireButton } from '@features/hiring'
 import { Container } from '@shared/components/Container'
 import { Subtitle } from './components/Subtitle'
 import { Title } from './components/Title'
