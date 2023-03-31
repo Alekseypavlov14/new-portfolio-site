@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { Appear, Directions } from '@shared/components/Animations'
-import avatar from './../../assets/avatar.png'
+import avatar from './../../assets/Avatar.png'
 import styles from './Photo.module.css'
 
 interface PhotoProps {}
