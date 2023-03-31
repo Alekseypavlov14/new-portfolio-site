@@ -1,5 +1,5 @@
 .Photo {
-  height: fit-content;
+  max-height: 581px;
   animation-delay: 0.5s;
 }
 
