@@ -1,7 +1,7 @@
 import { useSearchStore, updateResultSelector } from './../store'
 import { technologiesSelector, useFilterStore } from '@app/store/filterStore'
+import { sortProjectsByDate, useProjects } from '@entities/projects'
 import { filterProjectsByTechnologies } from '../utils/filterProjectsByTechnologies'
-import { useProjects } from '@entities/projects'
 import { useEffect } from 'react'
 
 export function useFilteredProjects() {
@@ -12,6 +12,7 @@ export function useFilteredProjects() {
 
   useEffect(() => {
     const filteredProjects = filterProjectsByTechnologies(projects, technologies)
-    updateResult(filteredProjects)
+    const projectsSortedByDate = sortProjectsByDate(filteredProjects)
+    updateResult(projectsSortedByDate)
   }, [projects, technologies])
 }
